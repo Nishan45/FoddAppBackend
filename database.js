@@ -1,7 +1,7 @@
-
+require('dotenv').config()
 const mongoose=require('mongoose')
 
-const mongoURI='mongodb+srv://Hulk:rzXh7tHs7rtxMZ9s@cluster0.ep0pd5y.mongodb.net/FoodApp'
+const mongoURI=process.env.MONGODB_URL;
 
 
 const mongoToConnect=()=>{
